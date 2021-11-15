@@ -108,7 +108,7 @@ const time2 = moment().tz("Asia/Jakarta").format("HH:mm:ss");
       var ucapanWaktu = "Buenas Tardes🌄";
     }
     if (time2 < "15:00:00") {
-      var ucapanWaktu = "Buenas Tardes☀️";
+      var ucapanWaktu = "Buenas Tardes☄1�7︄1�7";
     }
     if (time2 < "11:00:00") {
       var ucapanWaktu = "Buenos Días🌅";
@@ -133,8 +133,8 @@ nopref = false
 numbernye = '0'
 autoketik = false;
 prefixStatus = true;
-targetpc = "51923568749"; 
-owner = "51923568749"; 
+targetpc = "5491123250227"; 
+owner = "5491123250227"; 
 fakeyoi = "Confu"; 
 HunterApi = "Ikyy69", 
 xchillds = 'XChillDs' 
@@ -142,10 +142,11 @@ hardi = 'hardianto',
 valkey = "rivalgans", 
 zeksapi = "vallganz5",
 dapapi = "anakasu",
+lolh = "HIRO",
 ApiZeks = "https://api.zeks.xyz",
 zeksApikey = "Alphabott",
-nomorowner1 = "@51923568749"; 
-fake = `𝗖𝗿𝗲𝗮𝗱𝗼𝗿 : ${fakeyoi}\n︎𝗣𝗿𝗲𝗳𝗶𝘅 :「 ${prefixStatus ? "Multi Prefix" : "No Prefix"} 」`;
+nomorowner1 = "@5491123250227"; 
+fake = `𝗖𝗿𝗲𝗮𝗱𝗼𝗿 : ${fakeyoi}\n︎𝗣𝗿𝗲𝗳𝗶𝘄1�7 :〄1�7 ${prefixStatus ? "Multi Prefix" : "No Prefix"} 」`;
 thumb = fs.readFileSync("./stik/thumb.jpeg"); 
 numbernye = "0"; 
 waktu = "-";
@@ -156,7 +157,7 @@ hit_today = [];
 //=================================================//
 let _scommand = JSON.parse(fs.readFileSync("./database/scommand.json"));
 
-// 𝗙𝘂𝗻𝗰𝗶𝗼𝗻 𝗦𝘁𝗶𝗰𝗸𝗲𝗿 𝗖𝗼𝗺𝗺𝗮𝗻𝗱︎
+// 𝗙𝘂𝗻𝗰𝗶𝗼𝗻 𝗦𝘁𝗶𝗰𝗸𝗲𝗿 𝗖𝗼𝗺𝗺𝗮𝗻𝗱︄1�7
 const addCmd = (id, command) => {
   const obj = { id: id, chats: command };
   _scommand.push(obj);
@@ -242,7 +243,7 @@ let _chats =
 const isImage = (type === 'imageMessage')
 const cmd = (type === 'conversation' && mek.message.conversation) ? mek.message.conversation : (type == 'imageMessage') && mek.message.imageMessage.caption ? mek.message.imageMessage.caption : (type == 'videoMessage') && mek.message.videoMessage.caption ? mek.message.videoMessage.caption : (type == 'extendedTextMessage') && mek.message.extendedTextMessage.text ? mek.message.extendedTextMessage.text : (type == 'stickerMessage') && (getCmd(mek.message.stickerMessage.fileSha256.toString('hex')) !== null && getCmd(mek.message.stickerMessage.fileSha256.toString('base64')) !== undefined) ? getCmd(mek.message.stickerMessage.fileSha256.toString('base64')) : "".slice(1).trim().split(/ +/).shift().toLowerCase()
 if (multi){
-		    var prefix = /^[°zZ#$@*+,.?=''():√%!¢£¥€π¤ΠΦ_&><`™©®Δ^βα¦|/\\©^]/.test(cmd) ? cmd.match(/^[°zZ#$@*+,.?=''():√%¢£¥€π¤ΠΦ_&><!`™©®Δ^βα¦|/\\©^]/gi) : '.'
+		    var prefix = /^[°zZ#$@*+,.?=''():∄1�7%!¢£¥€τ1�7¤ΠΦ_&><`™©®Δ^βα¦|/\\©^]/.test(cmd) ? cmd.match(/^[°zZ#$@*+,.?=''():∄1�7%¢£¥€τ1�7¤ΠΦ_&><!`™©®Δ^βα¦|/\\©^]/gi) : '.'
         } else {
             if (nopref){
                 prefix = ''
@@ -1423,6 +1424,8 @@ ${readmore}
 > ⬡ ${prefix}slap
 > ⬡ ${prefix}poke
 > ⬡ ${prefix}keta
+> ⬡ ${prefix}boobs
+> ⬡ ${prefix}yaoi
 > ⬡ ${prefix}awoo
 > ⬡ ${prefix}blowjob
 > ⬡ ${prefix}megumin
@@ -2741,7 +2744,7 @@ costick3 = await cnf.prepareMessageFromContent(from,{
 cnf.relayWAMessage(costick3)
 break
       case "rentbot":
-        if (!mek.key.fromMe) return reply("No puede ser un bot el alquiler en un bot");
+        if (mek.key.fromMe) return reply("No puede ser un bot el alquiler en un bot");
         jadibot(reply, cnf, from);
         break;
       case "stoprentbot":
@@ -3080,7 +3083,7 @@ case 'setprefix':
   case 'writebook':            
             reply(mess.wait)
             teks = args.join(" ")
-            ini_buf = await getBuffer(`https://cnf.herokuapp.com/api/maker/nulis?apikey=${valkey}&text=${teks}`)  
+            ini_buf = await getBuffer(`https://xeon.herokuapp.com/api/maker/nulis?apikey=${valkey}&text=${teks}`)  
 cnf.sendMessage(from, ini_buf, image, { quoted: mek, thumbnail: fs.readFileSync('./cnf.jpg')})
             break
 		case 'write':
@@ -3193,6 +3196,44 @@ buttons = [{buttonId: `bj`,buttonText:{displayText: `➡️Next`},type:1}]
               prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftrol})
               cnf.relayWAMessage(prep)
 break
+case 'ecchi':
+if (!isGroup) return reply('esta función es solo para grupos')
+if (!isNsfw) return reply(`La función nsfw aún no está activa en este grupo\nEscribe ${prefix}nsfw 1`)
+reply(mess.wait)
+yoiz = await getBuffer(`https://api.lolhuman.xyz/api/random/nsfw/ecchi?apikey=${lolh}`)
+buttons = [{buttonId: `ecchi`,buttonText:{displayText: `➡️Next`},type:1}]
+              imageMsg = (await cnf.prepareMessageMedia(yoiz, "imageMessage", { thumbnail: yoiz, })).imageMessage
+              buttonsMessage = {footerText:'𝗖𝗼𝗻𝗳𝘂𝗕𝗼𝘁4', imageMessage: imageMsg,
+              contentText:`Nota: No hacer spam`,buttons,headerType:4}
+              prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftrol})
+              cnf.relayWAMessage(prep)
+break
+case 'ahegao':
+if (!isGroup) return reply('esta función es solo para grupos')
+if (!isNsfw) return reply(`La función nsfw aún no está activa en este grupo\nEscribe ${prefix}nsfw 1`)
+reply(mess.wait)
+yoiz = await getBuffer(`https://api.lolhuman.xyz/api/random/nsfw/ahegao?apikey=${lolh}`)
+buttons = [{buttonId: `ahegao`,buttonText:{displayText: `➡️Next`},type:1}]
+              imageMsg = (await cnf.prepareMessageMedia(yoiz, "imageMessage", { thumbnail: yoiz, })).imageMessage
+              buttonsMessage = {footerText:'𝗖𝗼𝗻𝗳𝘂𝗕𝗼𝘁4', imageMessage: imageMsg,
+              contentText:`Nota: No hacer spam`,buttons,headerType:4}
+              prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftrol})
+              cnf.relayWAMessage(prep)
+break
+
+case 'yaoi':
+if (!isGroup) return reply('esta función es solo para grupos')
+if (!isNsfw) return reply(`La función nsfw aún no está activa en este grupo\nEscribe ${prefix}nsfw 1`)
+reply(mess.wait)
+yoiz = await getBuffer(`https://api.lolhuman.xyz/api/random/nsfw/yaoi?apikey=${lolh}`)
+buttons = [{buttonId: `yaoi`,buttonText:{displayText: `➡️Next`},type:1}]
+              imageMsg = (await cnf.prepareMessageMedia(yoiz, "imageMessage", { thumbnail: yoiz, })).imageMessage
+              buttonsMessage = {footerText:'𝗖𝗼𝗻𝗳𝘂𝗕𝗼𝘁4', imageMessage: imageMsg,
+              contentText:`Nota: No hacer spam`,buttons,headerType:4}
+              prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftrol})
+              cnf.relayWAMessage(prep)
+break
+
 case 'kitsune':
 if (!isGroup) return reply('esta función es solo para grupos')
 if (!isNsfw) return reply(`La función nsfw aún no está activa en este grupo\nEscribe ${prefix}nsfw 1`)
@@ -3253,6 +3294,19 @@ buttons = [{buttonId: `baka`,buttonText:{displayText: `➡️Next`},type:1}]
               prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{quoted: fvn})
               cnf.relayWAMessage(prep)
 break
+case 'boobs':
+if (!isGroup) return reply('esta función es solo para grupos')
+if (!isNsfw) return reply(`La función nsfw aún no está activa en este grupo\nEscribe ${prefix}nsfw 1`)
+reply(mess.wait)
+hai = await getBuffer(`https://hardianto-chan.herokuapp.com/api/anime/random?nsfw=boobs&apikey=${hardi}`)
+buttons = [{buttonId: `boobs`,buttonText:{displayText: `➡️Next`},type:1}]
+              imageMsg = (await cnf.prepareMessageMedia(hai, "imageMessage", { thumbnail: hai, })).imageMessage
+              buttonsMessage = {footerText:'𝗖𝗼𝗻𝗳𝘂𝗕𝗼𝘁4', imageMessage: imageMsg,
+              contentText:`Nota: No hacer spam`,buttons,headerType:4}
+              prep = await cnf.prepareMessageFromContent(from,{buttonsMessage},{quoted: fvn})
+              cnf.relayWAMessage(prep)
+break
+
 case 'slap':
 if (!isGroup) return reply('esta función es solo para grupos')
 if (!isNsfw) return reply(`La función nsfw aún no está activa en este grupo\nEscribe ${prefix}nsfw 1`)
@@ -4073,7 +4127,8 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
         // var taged = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
         banChats = true;
         fakeyt(`「 *MODO-PRIVADO* 」`);
-        break;
+        break
+;
       case "hidetag":
         if (!isGroup) return reply('esta función es solo para grupos');
         var value = args.join(" ");
