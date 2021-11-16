@@ -108,7 +108,7 @@ const time2 = moment().tz("Asia/Jakarta").format("HH:mm:ss");
       var ucapanWaktu = "Buenas Tardes🌄";
     }
     if (time2 < "15:00:00") {
-      var ucapanWaktu = "Buenas Tardes☄1�7︄1�7";
+      var ucapanWaktu = "Buenas Tardes☄1�7︄1�7";
     }
     if (time2 < "11:00:00") {
       var ucapanWaktu = "Buenos Días🌅";
@@ -135,7 +135,7 @@ autoketik = false;
 prefixStatus = true;
 targetpc = "5491123250227"; 
 owner = "5491123250227"; 
-fakeyoi = "Confu"; 
+fakeyoi = "Tomytomatito:3"; 
 HunterApi = "Ikyy69", 
 xchillds = 'XChillDs' 
 hardi = 'hardianto', 
@@ -146,7 +146,7 @@ lolh = "HIRO",
 ApiZeks = "https://api.zeks.xyz",
 zeksApikey = "Alphabott",
 nomorowner1 = "@5491123250227"; 
-fake = `𝗖𝗿𝗲𝗮𝗱𝗼𝗿 : ${fakeyoi}\n︎𝗣𝗿𝗲𝗳𝗶𝘄1�7 :〄1�7 ${prefixStatus ? "Multi Prefix" : "No Prefix"} 」`;
+fake = `𝗖𝗿𝗲𝗮𝗱𝗼𝗿 : ${fakeyoi}\n︎𝗣𝗿𝗲𝗳𝗶𝘄1�7 :〄1�7 ${prefixStatus ? "Multi Prefix" : "No Prefix"} 」`;
 thumb = fs.readFileSync("./stik/thumb.jpeg"); 
 numbernye = "0"; 
 waktu = "-";
@@ -157,7 +157,7 @@ hit_today = [];
 //=================================================//
 let _scommand = JSON.parse(fs.readFileSync("./database/scommand.json"));
 
-// 𝗙𝘂𝗻𝗰𝗶𝗼𝗻 𝗦𝘁𝗶𝗰𝗸𝗲𝗿 𝗖𝗼𝗺𝗺𝗮𝗻𝗱︄1�7
+// 𝗙𝘂𝗻𝗰𝗶𝗼𝗻 𝗦𝘁𝗶𝗰𝗸𝗲𝗿 𝗖𝗼𝗺𝗺𝗮𝗻𝗱︄1�7
 const addCmd = (id, command) => {
   const obj = { id: id, chats: command };
   _scommand.push(obj);
@@ -243,7 +243,7 @@ let _chats =
 const isImage = (type === 'imageMessage')
 const cmd = (type === 'conversation' && mek.message.conversation) ? mek.message.conversation : (type == 'imageMessage') && mek.message.imageMessage.caption ? mek.message.imageMessage.caption : (type == 'videoMessage') && mek.message.videoMessage.caption ? mek.message.videoMessage.caption : (type == 'extendedTextMessage') && mek.message.extendedTextMessage.text ? mek.message.extendedTextMessage.text : (type == 'stickerMessage') && (getCmd(mek.message.stickerMessage.fileSha256.toString('hex')) !== null && getCmd(mek.message.stickerMessage.fileSha256.toString('base64')) !== undefined) ? getCmd(mek.message.stickerMessage.fileSha256.toString('base64')) : "".slice(1).trim().split(/ +/).shift().toLowerCase()
 if (multi){
-		    var prefix = /^[°zZ#$@*+,.?=''():∄1�7%!¢£¥€τ1�7¤ΠΦ_&><`™©®Δ^βα¦|/\\©^]/.test(cmd) ? cmd.match(/^[°zZ#$@*+,.?=''():∄1�7%¢£¥€τ1�7¤ΠΦ_&><!`™©®Δ^βα¦|/\\©^]/gi) : '.'
+		    var prefix = /^[°zZ#$@*+,.?=''():∄1�7%!¢£¥€τ1�7¤ΠΦ_&><`™©®Δ^βα¦|/\\©^]/.test(cmd) ? cmd.match(/^[°zZ#$@*+,.?=''():∄1�7%¢£¥€τ1�7¤ΠΦ_&><!`™©®Δ^βα¦|/\\©^]/gi) : '.'
         } else {
             if (nopref){
                 prefix = ''
@@ -344,7 +344,7 @@ const checkRegisteredUser = (sender) => {
       ? mek.participant
       : mek.key.remoteJid;
     const totalchat = await cnf.chats.all();
-    const ownerNumber = [`51923568749@s.whatsapp.net`]
+    const ownerNumber = [`5491123250227@s.whatsapp.net`]
 	const senderNumber = sender.split("@")[0] 
     const m = simple.smsg(cnf, mek);
     const groupMetadata = isGroup ? await cnf.groupMetadata(from) : "";
@@ -1184,6 +1184,14 @@ async function sendFileFromUrl(from, url, caption, msg, men) {
         });
       }
     }
+    
+   if (!isGroup && !isCmd && !command && !mek.key.fromMe) {
+	simi = await fetchJson(`https://api.simsimi.net/v2/?text=${cmd}&lc=es`)
+                     sami = simi.success
+                        cnf.sendMessage(from, `_${sami}_`, text, {thumbnail: ofrply, sendEphemeral: true, quoted:mek, contextInfo : {forwardingScore: 508, isForwarded: true}})
+                      }
+                      
+                      
     // Runtime🌿\\
     let settingstatus = 0;
     if (new Date() * 1 - settingstatus > 1000) {
