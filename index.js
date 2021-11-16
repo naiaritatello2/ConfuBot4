@@ -1185,10 +1185,6 @@ async function sendFileFromUrl(from, url, caption, msg, men) {
       }
     }
     
-   if (!isGroup && !isCmd && !command && !mek.key.fromMe) {
-	simi = await fetchJson(`https://api.simsimi.net/v2/?text=${cmd}&lc=es`)
-                     sami = simi.success
-                        reply(`${sami}`)
                       }
                       
                       
