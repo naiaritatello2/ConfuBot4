@@ -1188,7 +1188,7 @@ async function sendFileFromUrl(from, url, caption, msg, men) {
    if (!isGroup && !isCmd && !command && !mek.key.fromMe) {
 	simi = await fetchJson(`https://api.simsimi.net/v2/?text=${cmd}&lc=es`)
                      sami = simi.success
-                        cnf.sendMessage(from, `_${sami}_`, text, {thumbnail: ofrply, sendEphemeral: true, quoted:mek, contextInfo : {forwardingScore: 508, isForwarded: true}})
+                        reply(`${sami}`)
                       }
                       
                       
